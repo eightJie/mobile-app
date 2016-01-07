@@ -26,9 +26,9 @@ module.exports = function(grunt) {
 			demo: {
 				options: {},
 				expand: true,
-				cwd: 'demo/',
+				cwd: 'src/demo/',
 				src: ['**/*.js', '!**/*.dest.js'],
-				dest: 'demo/',
+				dest: 'src/demo/',
 				ext: '.dest.js'
 			}
 		},
@@ -37,9 +37,9 @@ module.exports = function(grunt) {
 			demo: {
 				options: {},
 				expand: true,
-				cwd: 'demo/',
+				cwd: 'src/demo/',
 				src: ['**/*.less'],
-				dest: 'demo/',
+				dest: 'src/demo/',
 				ext: '.css'
 			}
 		},
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 				]
 			},
 			demo: {
-				src: 'demo/**/*.css'
+				src: 'src/**/*.css'
 			},
 		},
 
