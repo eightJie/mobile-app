@@ -1807,3 +1807,5 @@ window.$ === undefined && (window.$ = Zepto)
   $.__detect = detect
 
 })(Zepto);
+
+require('./base');

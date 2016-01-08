@@ -1,0 +1,37 @@
+@import '../../less/variables.less';
+@import '../../less/mixins.less';
+
+.modal{
+	.ab-100();
+	z-index: 1000;
+
+	.modal-mask{
+		background-color: rgba(0, 0, 0, 0.6);
+		.ab-100();
+		z-index: 1;
+	}
+
+	.modal-inner{
+		background-color: #fff;
+		border-radius: 5px;
+		width: 600/640 * 100%;
+		min-height: 100px;
+		margin: 150px auto 0;
+		position: relative;
+		z-index: 2;
+	}
+
+	.modal-close{
+		background: url('@{imgBaseUrl}/modal/close.png') no-repeat 0 center;
+		background-size: contain;
+		width: 43px;
+		height: 35px;
+		position: absolute;
+		top: -17px;
+		right: 0;
+	}
+
+	.modal-content{
+
+	}
+}

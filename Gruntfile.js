@@ -23,6 +23,10 @@ module.exports = function(grunt) {
 		},
 
 		browserify: {
+			base: {
+				src: 'src/base/zepto.js',
+				dest: 'src/base/zepto.dest.js'
+			},
 			demo: {
 				options: {},
 				expand: true,
@@ -66,11 +70,11 @@ module.exports = function(grunt) {
 				tasks: ['handlebars']
 			},
 			browserify: {
-				files: ['<%= browserify.demo.src %>'],
+				files: ['src/demo/**/*.js', '!/src/demo/**/*.dest.js'],
 				tasks: ['browserify']
 			},
 			less: {
-				files:  ['<%= less.demo.src %>'],
+				files: ['src/demo/**/*.less'],
 				tasks: ['less', 'autoprefixer']
 			},
 		}
